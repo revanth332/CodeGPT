@@ -1,12 +1,7 @@
-import requests
+
 import streamlit as st
 import google.generativeai as genai
 
-# data = requests.get("https://jsonplaceholder.typicode.com/users").json()
-# for user in data:
-#     container = st.container()
-#     container.header(user["name"])
-#     container.subheader(user["email"])
 
 def generate_response(question):
     genai.configure(api_key="AIzaSyBCjsa0d1qUbfgvIRJQZc4VM2FPEh4leK0")
